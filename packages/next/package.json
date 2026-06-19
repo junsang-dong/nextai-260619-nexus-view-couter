@@ -1,0 +1,29 @@
+{
+  "name": "@nexuscounter/next",
+  "version": "0.1.0",
+  "description": "NexusCounter Next.js App Router route handlers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@nexuscounter/core": "*",
+    "next": "^16.0.0"
+  },
+  "peerDependencies": {
+    "next": ">=14"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3"
+  }
+}

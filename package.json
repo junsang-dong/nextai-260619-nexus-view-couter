@@ -1,0 +1,16 @@
+{
+  "name": "nexuscounter",
+  "private": true,
+  "version": "0.1.0",
+  "description": "NexusCounter — page & post view counter for Node.js web apps",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @nexuscounter/core && npm run build -w @nexuscounter/react && npm run build -w @nexuscounter/vercel && npm run build -w @nexuscounter/next",
+    "clean": "npm run clean -ws --if-present"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@nexuscounter/core",
+  "version": "0.1.0",
+  "description": "NexusCounter core — view tracking, entity classification, storage",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.34.9"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3"
+  }
+}
